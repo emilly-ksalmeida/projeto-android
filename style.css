@@ -12,25 +12,30 @@
 --cor2: #9FC131;
 --cor3: #005C53;
 --cor4: #042940;
+--cor5: #5fc131;
 
---fonte-padrao: Arial, Helvetica, sans-serif;
+--fonte-padrao: 'Times New Roman', Times, serif;
 --fonte-cabecalho: 'Electrolize', sans-serif;
 --fonte-android: 'android', sans-serif;
 }
 
 
 * {
-    font-family: var(--fonte-padrao)
-}
+    font-family: var(--fonte-padrao);
+  }
 
 header {
     text-align: center;
     background-image: linear-gradient(var(--cor3), var(--cor4));
     color: var(--cor0);
     padding: 30px;
+    width: 100vw;
+    margin: auto;
 }
 
 nav {
+    width: 100vw;
+    margin: auto;
     padding: 10px;
     background-color: var(--cor1);
 }
@@ -39,10 +44,11 @@ nav a {
     display: inline;
     text-align: center;
     padding: 10px;
+    font-size: 1em;
 }
 
 body {
-    background-color: var(--cor2);
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3), var(--cor4));
 }
 
 main {
@@ -50,7 +56,9 @@ min-width: 400px;
 max-width: 800px;
 margin: auto;
 padding: 20px;
+border-radius: 30px;
 background-color: var(--cor0);
+line-height: 2em;
 }
 
 aside {
@@ -64,6 +72,8 @@ footer {
     color: var(--cor0);
     text-align: center;
     padding: 5px;
+    width: 100vw;
+    margin: auto;
 }
 
 main p {
@@ -79,8 +89,9 @@ ul {
 
 a {
     font-weight: bolder;
-    color: var(--cor3);
+    color: var(--cor4);
     text-decoration: none;
+    font-size: 1.1em;
 }
 
 #video {
@@ -107,10 +118,10 @@ a {
 .titulo-2 {
     font-family: var(--fonte-android);
     font-size: 1.5em;
-    padding: 2px;
-    color: var(--cor4);
+    padding: 5px;
+    color: var(--cor0);
     font-weight: normal;
-    background-image: linear-gradient(to right, #005c5385, var(--cor0));
+    background-image: linear-gradient(to right, #004740 80%, var(--cor0));
 }
 
 .titulo-3 {
@@ -128,7 +139,7 @@ padding: 0px 30px 20px 30px;
 }
 strong {
     font-weight: bolder;
-    color: var(--cor3);
+    color: var(--cor5);
 }
 footer strong {
     color: var(--cor0);
