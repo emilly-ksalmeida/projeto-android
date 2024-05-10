@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@font-face {
+    font-family: 'android';
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+}
+/*Para criar variáveis no CSS, precisa usar um pseudo-elemento root, as propriedades declaradas para ele serão aplicadas a todo o documento HTML*/
+
+:root {
+--cor0: white;
+--cor1: #D6D58E;
+--cor2: #9FC131;
+--cor3: #005C53;
+--cor4: #042940;
+
+--fonte-padrao: Arial, Helvetica, sans-serif;
+--fonte-cabecalho: 'Electrolize', sans-serif;
+--fonte-android: 'android', sans-serif;
+}
+
+
+* {
+    font-family: var(--fonte-padrao)
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(var(--cor3), var(--cor4));
+    color: var(--cor0);
+    padding: 30px;
+}
+
+nav {
+    padding: 10px;
+    background-color: var(--cor1);
+}
+
+nav a {
+    display: inline;
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    background-color: var(--cor2);
+}
+
+main {
+min-width: 400px;
+max-width: 800px;
+margin: auto;
+padding: 20px;
+background-color: var(--cor0);
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 0px 0px 15px 0px;
+    border-radius: 30px;
+    box-shadow: 3px 5px 4px gray;
+}
+footer {
+    background-image: linear-gradient(var(--cor3), var(--cor4));
+    color: var(--cor0);
+    text-align: center;
+    padding: 5px;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+ul {
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+
+a {
+    font-weight: bolder;
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+#video {
+    background-color: var(--cor4);
+    text-align: center;
+    position: relative;
+    padding-bottom: 55%;
+}
+.imagem {
+    text-align: center;
+}
+#cabecalho {
+    font-family: var(--fonte-cabecalho);
+    text-align: center;
+    color: var(--cor0);
+    font-size: 3em;
+}
+.titulo-1 {
+    font-family: var(--fonte-android);
+    font-size: 2em;
+    color: var(--cor4);
+    font-weight: normal;
+}
+.titulo-2 {
+    font-family: var(--fonte-android);
+    font-size: 1.5em;
+    padding: 2px;
+    color: var(--cor4);
+    font-weight: normal;
+    background-image: linear-gradient(to right, #005c5385, var(--cor0));
+}
+
+.titulo-3 {
+    font-weight: bold;
+color: var(--cor0);
+background-color: var(--cor3);
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 15px;
+border-radius: 30px 30px 0px 0px;
+}
+
+.div-aside {
+padding: 0px 30px 20px 30px;
+}
+strong {
+    font-weight: bolder;
+    color: var(--cor3);
+}
+footer strong {
+    color: var(--cor0);
+}
+
+iframe {
+top: 5%;
+left: 5%;
+width: 90%;
+height: 90%;
+position: absolute;
+}
