@@ -22,6 +22,7 @@
 
 * {
     font-family: var(--fonte-padrao);
+    padding: 0px;
   }
 
 header {
@@ -29,12 +30,10 @@ header {
     background-image: linear-gradient(var(--cor3), var(--cor4));
     color: var(--cor0);
     padding: 30px;
-    width: 100vw;
     margin: auto;
 }
 
 nav {
-    width: 100vw;
     margin: auto;
     padding: 10px;
     background-color: var(--cor1);
@@ -72,7 +71,6 @@ footer {
     color: var(--cor0);
     text-align: center;
     padding: 5px;
-    width: 100vw;
     margin: auto;
 }
 
